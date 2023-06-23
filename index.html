@@ -29,12 +29,13 @@
 </head>
 
 <body>
-    <div class="hero">
+    <div class="container-fluid">
         <video autoplay loop muted plays-inline class="bg-video">
             <source src="./image/video.mp4" type="video/mp4 ">
         </video>
+      
         <!-- --navigation bar--- -->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a href="#" class="navbar-brand"><span>Restaurant</span></a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav"><span
@@ -58,23 +59,22 @@
             </div>
 
         </nav>
-
-        <div class="home">
-            <div class="content">
-                <h1>Welcome to Our <span>Restaurant</span></h1>
-                <p>TAKE ADVANTAGE OF THIS AMAZING EXCLUSIVE OFFER
-                    DON'T MISS THIS OPPORTUNITY FOR YOUR BUSINESS</p>
-                <button class="btn btn-warning"> <span>Order</span> Now</button>
-            </div>
-        </div>
     </div>
+  
 
 
 
 
 
     <!-- home section start -->
-    
+    <div class="home">
+        <div class="content ">
+            <h1>Welcome to Our <span>Restaurant</span></h1>
+            <p class="text-light">TAKE ADVANTAGE OF THIS AMAZING EXCLUSIVE OFFER
+                DON'T MISS THIS OPPORTUNITY FOR YOUR BUSINESS</p>
+            <a href="Menu.html"><button class="btn btn-warning"> <span>Order</span> Now</button></a>
+        </div>
+    </div>
 
     <!-- home section end -->
 
@@ -108,7 +108,7 @@
 
     <!-- Menu section start -->
 
-    <section class="menu" id="menu">
+    <section class="main-menu" id="menu">
         <div class="container">
             <div class="main-txt">
                 <h1><span>M</span>enu</h1>
@@ -128,7 +128,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <h6> <strong> Price:$50.00</strong></h6> <br>
-                            <a href="#order">Order Now </a>
+                            <a href="#order" class="btn btn-success">Order Now </a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <h6> <strong> Price:$90.00</strong></h6> <br>
-                            <a href="#order"> Order Now </a>
+                            <a href="#order" class="btn btn-success"> Order Now </a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                                 <i class="fa-solid fa-star checked"></i>
                             </div>
                             <h6> <strong> Price:$45.00</strong></h6> <br>
-                            <a href="#order"> Order Now </a>
+                            <a href="#order" class="btn btn-success"> Order Now </a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <h6> <strong> Price:$70.00</strong></h6> <br>
-                            <a href="#order"> Order Now </a>
+                            <a href="#order" class="btn btn-success"> Order Now </a>
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <h6> <strong> Price:$30.00</strong></h6> <br>
-                            <a href="#order"> Order Now </a>
+                            <a href="#order" class="btn btn-success"> Order Now </a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                             <h6> <strong> Price:$150.00</strong></h6> <br>
-                            <a href="#order"> Order Now </a>
+                            <a href="#order" class="btn btn-success"> Order Now </a>
                         </div>
                     </div>
                 </div>
@@ -231,70 +231,93 @@
 
     <!-- Menu section end -->
     <!-- Menu theme section start -->
-    <section class="menu-theme" style="margin-top: 70px;">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 pb-5 mt-5 text-center">
-                    <h1 class=" text-uppercase"><span>M</span> e <span>N</span> u</h1>
 
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 pb-5 text-center">
-                    <h4 class="text-center  text-uppercase">Appetizer</h4>
-                    <p class="text-uppercase">Oysters and Pearls</p>
-                    <p class="text-uppercase">Sabayon of pearl tapioca with island greek oysters</p>
-                    <p class="text-uppercase">White Sturgeon Caviar</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 pb-5 text-center">
-                    <h4 class="text-center  text-uppercase">First Course</h4>
-                    <p class="text-uppercase">Chantenay Carrot Tofu</p>
-                    <p class="text-uppercase">Hawaiian Heart of Peach Pea and Lime</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 pb-5 text-center">
-                    <h4 class="text-center  text-uppercase">Main Course</h4>
-                    <p class="text-uppercase">Slow Cook Fillet Of Pacific Yellowtail</p>
-                    <p class="text-uppercase">Compress Cucumbers, Avocado Mousse, And Garden Celery</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 pb-5 text-center">
-                    <h4 class="text-center  text-uppercase">Dessert</h4>
-                    <p class="text-uppercase">Chocolate Soufflet</p>
-                    <p class="text-uppercase">Strawberry and Vanilla Sorbet</p>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-10 pb-5 text-center">
-                    <h4 class="text-center  text-uppercase">Wine</h4>
-                    <p class="text-uppercase">White: Reisling Chardonnay</p>
-                    <p class="text-uppercase">Red: Mary Rivers, Pinot Noir, Sonoma Coast</p>
-                </div>
-            </div>
+    <div class="container menu-theme w-50 my-5">
+        <div class="row text-center">
+
+            <h1 class=" text-uppercase"><span>M</span> e <span>N</span> u</h1>
+
+
         </div>
-    </section>
+        <div class="row">
+            <h4 class="text-center  text-uppercase">Appetizer</h4>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Oysters and Pearls</p>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Sabayon of pearl tapioca with island greek oysters</p>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">White Sturgeon Caviar</p>
+        </div>
+
+
+        <div class="row">
+            <h4 class="text-center  text-uppercase">First Course</h4>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Chantenay Carrot Tofu</p>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Hawaiian Heart of Peach Pea and Lime</p>
+        </div>
+
+
+        <div class="row">
+
+            <h4 class="text-center  text-uppercase">Main Course</h4>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Slow Cook Fillet Of Pacific Yellowtail</p>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Compress Cucumbers, Avocado Mousse, And Garden Celery</p>
+        </div>
+
+
+        <div class="row ">
+            <h4 class="text-center  text-uppercase">Dessert</h4>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Chocolate Soufflet</p>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Strawberry and Vanilla Sorbet</p>
+        </div>
+        <div class="row">
+            <h4 class="text-center  text-uppercase">Wine</h4>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">White: Reisling Chardonnay</p>
+        </div>
+        <div class="row">
+            <p class="text-uppercase text-center">Red: Mary Rivers, Pinot Noir, Sonoma Coast</p>
+        </div>
+
+
+    </div>
+
     <!-- Menu theme section end  -->
     <!-- delivery section start -->
-    <div class="delivery" style="margin-top: 50px;">
-        <div class="container">
-            <img src="./image/delivery.jpg" alt="" height="450px">
+    
+        <div class="container delivery">
+            
 
-            <h1>FOOD DELIVERY</h1>
+          <h1 class="text-center">Fast Delivery</h1>
 
         </div>
-    </div>
+ 
 
     <!-- delivery section end -->
     <!-- Special deals section start -->
 
 
-    <section class="special-deals my-5">
-        <div class="container">
-            <h2 class="text-center my-5">Special <span>Deals</span> Of the day</h2>
+   
+        <div class="container special-deals">
+            <div class="row">
+                <h2 class="text-center my-5">Special <span>Deals</span> Of the day</h2>
+            </div>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -318,21 +341,21 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon"></span>
+                    <span >Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon"></span>
+                    <span>Next</span>
                 </button>
             </div>
         </div>
     </section>
     <!-- Special deals section end -->
-    <!-- best section start -->
-    <section class="best">
-        <div class="container">
+    <!-- accoordian section start -->
+  
+        <div class="container my-5">
 
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -383,27 +406,34 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- best section end -->
+    
+    <!-- accordian section end -->
     <!-- footer section start -->
-    <section id="footer">
-        <h1><span>Restaurant</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, blanditiis atque.</p>
-        <div class="social-links">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
+ 
+    <div class="container-fluid mt-5 bg-light">
+        <div class="row">
+            <h1 class="text-center text-warning mt-5"><span>Restaurant</span></h1>
         </div>
-        <div class="credit">
-            <p>Designed by <a href="https://pradeep82188.github.io/">PS coding</a></p>
-        </div>
-        <div class="copyright">
-            <p>&copy;Copyright PS coding. All Rights reserved.</p>
-        </div>
+        <div class="row text-center">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, blanditiis atque.</p>
 
-    </section>
+        </div>
+        <div class="row social-links text-danger text-center">
+            <i class="fa-brands fa-twitter my-2 fs-2"></i>
+            <i class="fa-brands fa-facebook my-2 fs-2"></i>
+            <i class="fa-brands fa-instagram my-2 fs-2"></i>
+            <i class="fa-brands fa-youtube my-2 fs-2"></i>
+            <i class="fa-brands fa-pinterest-p my-2 fs-2"></i>
+
+        </div>
+        <div class="row text-center">
+            <p>Designed by <a href="">PS coding</a></p>
+        </div>
+        <div class="row text-center">
+            <p>&copy;Copyright PS coding. All Rights reserved.</p> 
+
+        </div>
+    </div>
     <!-- footer section end -->
 
 
